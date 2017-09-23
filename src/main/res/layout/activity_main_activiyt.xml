@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="scut.carson_ho.main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_about_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <Button
+            android:id="@+id/btn_about_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="broadCast"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <Button
+            android:id="@+id/btn_about_sqlite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据库"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_ui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UI"/>
+
+        <Button
+            android:id="@+id/btn_content_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容提供者"/>
+
+        <Button
+            android:id="@+id/btn_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bar"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_asyncTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AsynTask"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

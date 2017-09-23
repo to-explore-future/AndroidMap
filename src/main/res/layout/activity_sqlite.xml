@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="scut.carson_ho.main.sqlite.SQLiteActivity">
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shape"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_zhangsan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_lisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李四"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_wangwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王五"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_zhaoliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵六"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_color"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shape"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黄色"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="insert"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>
