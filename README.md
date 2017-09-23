@@ -1,5 +1,5 @@
 # AndroidMap
-关于android的所有知识，都容纳到这个仓库中
+关于android的所有知识，都容纳到这个仓库中，随着我的知识领域的扩张，这个项目也会越来越完善。
 
 本Module依赖ButterKnife,ButterKnife需要在项目的**Build.gradle**中添加配置，不过我没上传，所以需要你自己添加
 ```java
