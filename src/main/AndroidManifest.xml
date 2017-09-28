@@ -53,6 +53,7 @@
         </activity>
         <activity android:name=".AsynTask.AsynTaskActivity">
         </activity>
+        <activity android:name=".AsynTask.AsyncTaskActivity"/>
     </application>
 
 </manifest>

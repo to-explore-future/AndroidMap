@@ -1,79 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="scut.carson_ho.main.MainActivity">
+    tools:context="scut.carson_ho.main.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/btn_about_service"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Service"
+        android:textAllCaps="false"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_ui"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <Button
-            android:id="@+id/btn_about_service"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Service"
-            android:textAllCaps="false"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"/>
+    <Button
+        android:id="@+id/btn_about_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="broadCast"
+        android:textAllCaps="false"
+        tools:layout_conversion_absoluteX="88dp"
+        tools:layout_conversion_absoluteY="0dp"
+        tools:layout_conversion_absoluteWidth="90dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_about_sqlite"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <Button
-            android:id="@+id/btn_about_broadcast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="broadCast"
-            android:textAllCaps="false"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"/>
+    <Button
+        android:id="@+id/btn_about_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据库"
+        tools:layout_conversion_absoluteX="178dp"
+        tools:layout_conversion_absoluteY="0dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_about_broadcast"/>
 
-        <Button
-            android:id="@+id/btn_about_sqlite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="数据库"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Theme"
-            android:textAllCaps="false"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btn_ui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UI"/>
-
-        <Button
-            android:id="@+id/btn_content_provider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="内容提供者"/>
-
-        <Button
-            android:id="@+id/btn_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bar"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_asyncTask"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AsynTask"
-            android:textAllCaps="false"/>
-
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme"
+        android:textAllCaps="false"
+        tools:layout_conversion_absoluteX="266dp"
+        tools:layout_conversion_absoluteY="0dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        android:id="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_about_sqlite"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_about_sqlite"/>
 
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UI"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="48dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintRight_toLeftOf="@+id/btn_about_broadcast"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_content_provider"
+        tools:layout_constraintBaseline_creator="1"/>
+
+    <Button
+        android:id="@+id/btn_content_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容提供者"
+        tools:layout_conversion_absoluteX="88dp"
+        tools:layout_conversion_absoluteY="48dp"
+        tools:layout_conversion_absoluteWidth="94dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_about_broadcast"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_about_broadcast"/>
+
+    <Button
+        android:id="@+id/btn_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar"
+        android:textAllCaps="false"
+        tools:layout_conversion_absoluteX="182dp"
+        tools:layout_conversion_absoluteY="48dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_about_sqlite"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_content_provider"/>
+
+    <Button
+        android:id="@+id/btn_asyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AsynTask"
+        android:textAllCaps="false"
+        tools:layout_conversion_absoluteX="270dp"
+        tools:layout_conversion_absoluteY="48dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_bar"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_bar"/>
+
+
+</android.support.constraint.ConstraintLayout>
