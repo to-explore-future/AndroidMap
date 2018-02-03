@@ -2,6 +2,7 @@ package scut.carson_ho.main;
 
 import android.content.ComponentCallbacks2;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
@@ -120,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
     public void onLowMemory() {
         super.onLowMemory();
         Log.i(TAG, "onLowMemory:");
+
+    }
+
+    public boolean checkSDKVersion() {
+        return Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M;
     }
 
     @Override
